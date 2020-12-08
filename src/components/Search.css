@@ -107,8 +107,9 @@ input[type=text]{
     
 }
 .show-description-container{
-    float: left;
-    width: 50%;
+    float: right;
+    width: 74%;
+    height: auto;
 }
 .show-title{
     margin-left: 20px;
@@ -118,11 +119,18 @@ input[type=text]{
     font-size: 20px;
 }
 .show-description{
-    margin-left: 20px;
-    margin-top: 15px;
-    height: 55px;
-    columns: #040E3F;
+    width: 470px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+    
+    
 }
 .btn-show-episode{
     width: 20%;
@@ -130,6 +138,7 @@ input[type=text]{
     border: none;
     padding: 5px 0px;
     margin-left: 20px;
+    margin-top: 7px;
     border-radius: 4px;
     display: inline-block;
     box-sizing: border-box;
@@ -145,7 +154,7 @@ input[type=text]{
     position: relative;
     z-index: 10;
     top: -23px;
-    right: -13px;
+    right: -40px;
     width: 167px;
     height: 203px;
     border-radius: 4px;
